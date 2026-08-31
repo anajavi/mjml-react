@@ -1,15 +1,14 @@
-#!/usr/bin/env ts-node
-
 /**
  * Generate the mjml components
  *
- * usage `node --require ts-node/register scripts/generate-mjml-react.ts`
+ * usage `node scripts/generate-mjml-react.ts`
  */
 import * as childProcess from "child_process";
 import * as del from "del";
 import * as fs from "fs";
 import camelCase from "lodash.camelcase";
 import upperFirst from "lodash.upperfirst";
+// @ts-expect-error - no types available for mjml-preset-core
 import presetCore from "mjml-preset-core";
 import * as path from "path";
 
