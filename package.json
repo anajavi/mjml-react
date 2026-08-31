@@ -35,8 +35,8 @@
     "test": "vitest run",
     "test-dist-skip-build": "vitest run --config vitest-dist.config.js",
     "test-dist": "yarn build-dist && yarn test-dist-skip-build",
-    "generate-mjml-react": "ts-node scripts/generate-mjml-react.ts",
-    "build-mjml-react": "ts-node scripts/build-mjml-react.ts",
+    "generate-mjml-react": "node scripts/generate-mjml-react.ts",
+    "build-mjml-react": "node scripts/build-mjml-react.ts",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -70,7 +70,6 @@
     "react": "^18.3",
     "react-dom": "^18.3",
     "semantic-release": "^24.0.0",
-    "ts-node": "^10.9.2",
     "typescript": "5.9.3",
     "vitest": "^4.1.11"
   },
