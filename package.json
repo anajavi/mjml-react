@@ -71,7 +71,8 @@
     "react-dom": "^18.3",
     "semantic-release": "^24.0.0",
     "typescript": "5.9.3",
-    "vitest": "^4.1.11"
+    "vite": "^8.2.2",
+    "vitest": "^5.0.0"
   },
   "peerDependencies": {
     "mjml": "^5.0.0",
